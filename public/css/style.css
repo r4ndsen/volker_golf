@@ -1,0 +1,8 @@
+body {
+  background: url('../images/NSLinenBackgroundPattern.png') repeat fixed center center lightgrey;
+}
+
+.centeredContent {
+  margin: 200px auto;
+  max-width: 300px;
+}

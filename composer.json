@@ -1,0 +1,13 @@
+{
+    "name": "wernerspiegelpup/stone-tower-ranch",
+    "type": "homepage",
+    "require": {
+        "components/jquery": ">=2",
+        "twbs/bootstrap": "v3.3.6",
+        "components/font-awesome": ">=4",
+        "phpmailer/phpmailer": ">=v5.2.12"
+    },
+    "config": {
+        "vendor-dir": "public/vendor"
+    }
+}
