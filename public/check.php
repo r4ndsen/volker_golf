@@ -1,14 +1,31 @@
 <?php
 
-require __DIR__.'/../bootstrap.php';
+require __DIR__ . '/../bootstrap.php';
 
-$disabled = false;
-$success = true;
+use \vg\Response;
+use \vg\SQLite as db;
 
-$message = 'hallo Welt';
+$code = $_POST['code'];
 
-echo json_encode([
-  'success' => $success,
-  'disabled' => $disabled,
-  'message' => $message,
-]);
+if (empty($code)) {
+    echo new Response('Invalider Teilnehmercode');
+    exit;
+}
+
+$db = new db;
+
+$record = $db->get($code);
+
+if (empty($record['date'])) {
+  $db->activate($code);
+
+  $r = new Response('gepr&uuml;ft', true, true);
+  $r->longtext = sprintf('Teilnehmer %s registriert', $record['name']);
+  echo $r;
+  exit;
+}
+
+$r = new Response('gepr&uuml;ft', true, true);
+$r->longtext = sprintf('Sie sind bereits seit %s Uhr registriert, vielen Dank', $record['date']);
+echo $r;
+exit;

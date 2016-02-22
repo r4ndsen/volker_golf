@@ -2,5 +2,4 @@
 /public/vendor
 composer.lock
 .login.ini
-stone-tower-ranch.sublime-workspace
 *.log

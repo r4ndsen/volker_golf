@@ -10,14 +10,15 @@ $(document).on('click', '.js_submitRequest', function(e) {
       code: $('.js_inputCode').val()
     },
     success: function(data) {
-      btn.text(data.message);
+      btn.html(data.message);
 
       if (data.disabled === true) {
         btn.prop('disabled', true);
       };
 
       if (data.success === true) {
-        btn.removeClass('btn-warning').addClass('btn-success');
+        btn.removeClass('btn-warning btn-default').addClass('btn-success');
+        $('.js_response').html(data.longtext);
       } else {
         btn.addClass('btn-warning');
       }

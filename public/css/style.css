@@ -1,8 +1,60 @@
 body {
-  background: url('../images/NSLinenBackgroundPattern.png') repeat fixed center center lightgrey;
+  background: url('../images/bg.png') no-repeat fixed center top #041E2E;
+  background-size: cover;
+  padding-bottom: 70px;
 }
 
-.centeredContent {
-  margin: 200px auto;
-  max-width: 300px;
+.centerImageContainer {
+  margin: 100px auto;
+  display: table;
+  /*
+    max-width: 1004px;
+    max-height: 487px;
+  */
+
+  width: 667px;
+  height: 322px;
+
+  background: url('../images/logo_egt_webseite.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.blankBg {
+  background-image: url('../images/imprint_webseite.png');
+}
+
+.centerImageContainer .ct {
+  text-transform: uppercase;
+  font-family: 'Optima';
+  color: white;
+  text-align: center;
+}
+
+.centerImageContainer .ct-top {
+  letter-spacing: 40px;
+  font-weight: 100;
+  padding-top: 65px;
+  font-size: 20px;
+}
+
+.centerImageContainer .ct-bottom {
+  padding-top: 45px;
+  font-size: 14px;
+}
+
+.ct-bottom p {
+  padding-bottom: 12px;
+}
+
+.js_Response {
+  opacity: 0;
+}
+
+.volkerblue {
+  background-color: #041E2E!important;
+}
+
+.navbar-brand img{
+  width: 24px;
 }
