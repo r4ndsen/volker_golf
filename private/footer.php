@@ -2,7 +2,7 @@
       <div class="container-fluid">
         <div class="navbar-header navbar-right">
           <a class="navbar-brand" href="index.php">
-            <img alt="bla" src="images/icon.png" />
+            <img alt="bla" src="images/icon_inv.png" />
           </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

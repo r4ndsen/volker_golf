@@ -3,7 +3,7 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>Volker Golf</title>
+    <title>Entrepreneurs Golf Tournament</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Werner Spiegel">

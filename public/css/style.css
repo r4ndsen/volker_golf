@@ -12,8 +12,14 @@ body {
     max-height: 487px;
   */
 
+  /* 67%
   width: 667px;
   height: 322px;
+  */
+
+  /* 50% */
+  width: 502px;
+  height: 243px;
 
   background: url('../images/logo_egt_webseite.png');
   background-size: 100%;
@@ -32,19 +38,19 @@ body {
 }
 
 .centerImageContainer .ct-top {
-  letter-spacing: 40px;
+  letter-spacing: 30px;
   font-weight: 100;
-  padding-top: 65px;
+  padding-top: 45px;
   font-size: 20px;
 }
 
 .centerImageContainer .ct-bottom {
-  padding-top: 45px;
-  font-size: 14px;
+  padding-top: 30px;
+  font-size: 12px;
 }
 
 .ct-bottom p {
-  padding-bottom: 12px;
+  padding-bottom: 0px;
 }
 
 .js_Response {
@@ -55,6 +61,12 @@ body {
   background-color: #041E2E!important;
 }
 
-.navbar-brand img{
-  width: 24px;
+.navbar-brand {
+  margin-top: -10px
 }
+
+.navbar-brand img{
+  margin-top: 0;
+  height: 35px;
+}
+
